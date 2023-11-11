@@ -33,9 +33,10 @@ public class Kakao2022_02 {
 
         /**
          * queue1.length == queue2.length이므로
-         * 두 큐를 모두 한번씩 순회한 횟수 = limit
+         * 두 큐를 모두 한번씩 순회한 횟수 = queue1.length * 2
+         * 모두 순회해도 안될 경우 존재! 11번 28번 테스트케이스 통과여부!
          */
-        int limit = queue1.length * 4;
+        int limit = queue1.length * 2 + 1;
 
         while(sum1 != sum2) {
             //둘 중 큐가 비거나 전부 순회했을 경우
